@@ -1,0 +1,72 @@
+/*
+ * Main styles
+ *
+ */
+@import "nib"
+@import "normalize"
+@import "grid"
+@import "utilities"
+
+vendor-prefixes = webkit o ms moz official
+
+/* 
+ * ------------------------------
+ * General
+ * ------------------------------
+ */
+
+*,
+*:before,
+*:after
+	box-sizing border-box
+
+
+html
+	font 100%/1.5 Arial
+	font-weight 300
+	text-rendering optimizeLegibility
+	-webkit-font-smoothing antialiased
+
+body
+	background-color #f8f8f8
+	color #444
+
+input
+textarea
+	width 100%
+	height auto
+	border 1px solid darken(lighten-gray, 7%)
+	color dark-gray
+	padding-left .5rem
+	transition all 200ms ease-out
+	font-size 0.875rem // 14px
+	&:focus
+		outline none
+		border-color darken(lighten-gray, 13%)
+
+input
+	height 40px
+
+img
+	max-width 100%
+	height auto
+	vertical-aling middle
+
+ul
+	padding 0
+	li
+		list-style-type none
+
+a
+	color red
+	transition all .2s ease-in-out
+	text-decoration none
+	&:hover
+		color dark-red
+		
+/* 
+ * ------------------------------
+ * Start here
+ * ------------------------------
+ */
+ 
